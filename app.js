@@ -5,7 +5,6 @@ const   express = require('express'),
 
 // connect mongo to express
 mongoose.connect('mongodb://lily:lily@ds253959.mlab.com:53959/event-api');
-console.log(process.env.DATABASEURL);
 
 // setup the main route
 app.get("/", (req, res) => {
