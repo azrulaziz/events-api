@@ -1,6 +1,9 @@
 const   express = require('express'),
         app = express(),
         mongoose = require('mongoose');
+        cors = require('cors');
+
+app.use(cors());
 
 // connect mongo to express
 mongoose.connect(process.env.DATABASEURL);
