@@ -3,9 +3,10 @@ const   express = require('express'),
         mongoose = require('mongoose');
         cors = require('cors');
 
+// intialize cors helper to handle cross domain request
 app.use(cors());
 
-// connect mongo to express
+// connect mongoDB to express
 mongoose.connect(process.env.DATABASEURL);
 
 // setup the main route
